@@ -16,9 +16,8 @@ function GridCards(props) {
             </Col>
         )
     }else{
-        if(props.image != null){
+        // if(props.image !== null){
             return (
-                
                 <Col lg={6} md={8} xs={24}>
                     <div style={{position: 'relative'}}>
                         <img style={{width:'100%',height:'320px'}} src={props.image} alt={props.characterName}/>
@@ -26,15 +25,15 @@ function GridCards(props) {
                 </Col>
                 
             )
-        }else{
-            return (
-                <Col lg={6} md={8} xs={24}>
-                    <div style={{position: 'relative'}}>
-                        <img style={{width:'100%',height:'320px'}}/>
-                    </div>
-                </Col>
-            )
-        }
+        // }else{
+        //     return (
+        //         <Col lg={6} md={8} xs={24}>
+        //             <div style={{position: 'relative'}}>
+        //                 <img style={{width:'100%',height:'320px'}}/>
+        //             </div>
+        //         </Col>
+        //     )
+        // }
     }
     
 }
